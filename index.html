@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Dark Mode</title>
+   </head>
+   <body>
+      <div class="container">
+         <h1>Hello There!</h1>
+         <h3>Follow Us @rizkicrmdn</h3>
+
+         <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati porro explicabo cupiditate tenetur expedita ea, rerum asperiores voluptatum nemo facere, sit eius amet nostrum officia consequatur animi inventore eum.
+            Excepturi!
+         </p>
+
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magnam, nemo illum temporibus corrupti nesciunt veniam dolorem alias dolore molestiae error recusandae non rerum, molestias a sed fugiat explicabo fugit odio corporis
+            esse omnis deleniti sint? Est deleniti excepturi pariatur aliquid impedit ea libero voluptates necessitatibus cum, neque assumenda, architecto eius fuga voluptate? Hic voluptatem nulla illo quaerat? Ad quidem itaque placeat nemo
+            non iusto, labore fuga magni rerum illum odit optio? Nam sint perspiciatis repellendus ex cumque minus maiores esse facere sequi quos ea magnam, porro consequatur, explicabo repellat quis illo fugiat nesciunt rerum? Qui
+            doloribus consequuntur molestiae aperiam?
+         </p>
+
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores esse expedita illum debitis, veniam dicta, facere dignissimos rem modi molestiae ipsum, ducimus reiciendis totam recusandae architecto vero eaque dolore.
+         </p>
+
+         <br />
+
+         <button onclick="setDarkMode(false)">Light Mode</button>
+         <button onclick="setDarkMode(true)">Dark Mode</button>
+      </div>
+
+      <script>
+         if (localStorage.getItem('theme') == 'dark') {
+            setDarkMode(true);
+         }
+
+         function setDarkMode(isDark) {
+            if (isDark) {
+               document.body.setAttribute('id', 'darkmode');
+               localStorage.setItem('theme', 'dark');
+            } else {
+               document.body.setAttribute('id', '');
+               localStorage.removeItem('theme');
+            }
+         }
+      </script>
+   </body>
+</html>

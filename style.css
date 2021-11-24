@@ -1,0 +1,66 @@
+* {
+   font-family: 'Consolas';
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #eee;
+   transition: background 0.2s linear;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 50%;
+   margin: auto;
+   padding: 20px;
+}
+
+h1 {
+   font-size: 40px;
+}
+
+h3 {
+   font-size: 20px;
+}
+
+p {
+   font-size: 0.8em;
+}
+
+button {
+   background-color: rgb(27, 27, 27);
+   color: white;
+   border: none;
+   padding: 10px;
+   transition: 0.5s ease;
+}
+
+button:hover {
+   background-color: rgb(27, 27, 27, 0.5);
+   transition: 0.5s ease;
+}
+
+#darkmode {
+   background-color: rgb(35, 35, 58);
+   color: white;
+}
+
+#darkmode button {
+   background-color: rgb(204, 23, 10);
+   color: white;
+   border: none;
+   padding: 10px;
+   outline: none;
+}
+
+#darkmode button:hover {
+   background-color: rgba(204, 23, 10, 0.5);
+}
+
+/* Layar Smartphone */
+@media screen and (max-width: 579px) {
+   body {
+      height: 120vh;
+      width: 100%;
+   }
+}
